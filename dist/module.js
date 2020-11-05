@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment", "./css/multistat-panel.css!", "d3", "@grafana/runtime", "@grafana/data"], function (_export, _context) {
+System.register(['app/plugins/sdk', 'jquery', 'jquery.flot', 'lodash', 'moment', './css/multistat-panel.css!', 'd3', '@grafana/runtime', '@grafana/data'], function (_export, _context) {
   "use strict";
 
   var MetricsPanelCtrl, $, _, moment, d3, getTemplateSrv, PanelEvents, _createClass, templateSrv, MultistatPanelCtrl, CTRL;
@@ -72,7 +72,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
       templateSrv = getTemplateSrv();
 
-      _export("PanelCtrl", MultistatPanelCtrl = function (_MetricsPanelCtrl) {
+      _export('PanelCtrl', MultistatPanelCtrl = function (_MetricsPanelCtrl) {
         _inherits(MultistatPanelCtrl, _MetricsPanelCtrl);
 
         /** @ngInject */
@@ -86,51 +86,52 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             timeShift: null,
             BarPadding: 10,
             MultiBarPadding: 10,
-            BaseLineColor: "#ff0000",
+            BaseLineColor: '#ff0000',
             BaseLineWidth: 1,
             BaseLineValue: null,
-            DateTimeColName: "date",
-            DateFormat: "YYYY-MM-DD HH:mm:ss",
-            TooltipDateFormat: "YYYY-MM-DD HH:mm:ss",
+            DateTimeColName: 'date',
+            DateFormat: 'YYYY-MM-DD HH:mm:ss',
+            TooltipDateFormat: 'YYYY-MM-DD HH:mm:ss',
             FlashHighLimitBar: false,
             FlashLowLimitBar: false,
-            HighAxisColor: "#ffffff",
+            HighAxisColor: '#ffffff',
             HighAxisWidth: 1,
-            HighBarColor: "rgb(120, 128, 0)",
+            HighBarColor: 'rgb(120, 128, 0)',
             RecolorColName: null,
-            HighLimitBarColor: "#ff0000",
-            HighLimitBarFlashColor: "#ffa500",
+            HighLimitBarColor: '#ff0000',
+            HighLimitBarFlashColor: '#ffa500',
             HighLimitBarFlashTimeout: 1000,
-            HighLimitLineColor: "#ff0000",
+            HighLimitLineColor: '#ff0000',
             HighLimitValue: null,
             HighLmitLineWidth: 1,
             HighSideMargin: 22,
             Horizontal: false,
-            LabelColName: "",
-            LabelNameFilter: "",
-            LabelColor: "#ffffff",
-            OutOfRangeLabelColor: "#ffffff",
-            GroupLabelColor: "#ffffff",
-            LabelFontSize: "100%",
-            GroupLabelFontSize: "200%",
+            LabelColName: '',
+            EndColName: '',
+            LabelNameFilter: '',
+            LabelColor: '#ffffff',
+            OutOfRangeLabelColor: '#ffffff',
+            GroupLabelColor: '#ffffff',
+            LabelFontSize: '100%',
+            GroupLabelFontSize: '200%',
             GroupGap: 5,
             LabelMargin: null,
             Legend: false,
             Links: [],
-            LowAxisColor: "#ffffff",
+            LowAxisColor: '#ffffff',
             LowAxisWidth: 1,
-            LowBarColor: "teal",
-            LowLimitBarColor: "#ff0000",
-            LowLimitBarFlashColor: "#ffa500",
+            LowBarColor: 'teal',
+            LowLimitBarColor: '#ff0000',
+            LowLimitBarFlashColor: '#ffa500',
             LowLimitBarFlashTimeout: 200,
-            LowLimitLineColor: "#ff0000",
+            LowLimitLineColor: '#ff0000',
             LowLimitValue: null,
             LowLmitLineWidth: 1,
             LowSideMargin: 22,
-            MaxLineColor: "rgb(74, 232, 12)",
+            MaxLineColor: 'rgb(74, 232, 12)',
             MaxLineWidth: 1,
             MaxLineValue: null,
-            MinLineColor: "#ff0000",
+            MinLineColor: '#ff0000',
             MinLineWidth: 1,
             MinLineValue: null,
             RecolorHighLimitBar: false,
@@ -138,7 +139,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             RecolorRules: [],
             ShowBaseLine: false,
             ShowDate: false,
-            Aggregate: "last",
+            Aggregate: 'last',
             ShowHighLimitLine: false,
             ShowLabels: true,
             ShowGroupLabels: true,
@@ -148,32 +149,32 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             ShowMinLine: false,
             ShowRightAxis: true,
             ShowValues: true,
-            SortColName: "value",
-            SortDirection: "ascending",
+            SortColName: 'value',
+            SortDirection: 'ascending',
             TZOffsetHours: 0,
-            ToolTipType: "",
-            ToolTipFontSize: "100%",
-            ValueColName: "",
+            ToolTipType: '',
+            ToolTipFontSize: '100%',
+            ValueColName: '',
             Values: [],
             ValueDecimals: 2,
-            ValueColor: "#ffffff",
-            ValueFontSize: "100%",
-            OddRowColor: "rgba(33, 33, 34, 0.92)",
-            EvenRowColor: "rgba(61, 61, 64, 0.78)",
-            OutlineColor: "rgba(245, 255, 0, 0.1)",
-            GroupSortString: "",
+            ValueColor: '#ffffff',
+            ValueFontSize: '100%',
+            OddRowColor: 'rgba(33, 33, 34, 0.92)',
+            EvenRowColor: 'rgba(61, 61, 64, 0.78)',
+            OutlineColor: 'rgba(245, 255, 0, 0.1)',
+            GroupSortString: '',
             GroupCols: 0,
-            GroupNameFilter: "",
+            GroupNameFilter: '',
             ScaleFactor: 1,
-            ValuePosition: "top",
+            ValuePosition: 'top',
             LableAngle: 0,
             ShowBars: true,
             ShowLines: false,
             LineWidth: 5,
-            LineColor: "blue",
+            LineColor: 'blue',
             DotSize: 10,
-            DotColor: "white",
-            CurveType: "Monotone"
+            DotColor: 'white',
+            CurveType: 'Monotone'
           };
 
           _.defaults(_this.panel, panelDefaults);
@@ -210,12 +211,12 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
           _this.events.on(PanelEvents.dataSnapshotLoad, _this.onDataSnapshotLoad.bind(_this));
           _this.events.on(PanelEvents.editModeInitialized, _this.onInitEditMode.bind(_this));
           _this.events.on(PanelEvents.dataSnapshotLoad, _this.onDataSnapshotLoad.bind(_this));
-          _this.className = "michaeldmoore-multistat-panel-" + _this.panel.id;
+          _this.className = 'michaeldmoore-multistat-panel-' + _this.panel.id;
           return _this;
         }
 
         _createClass(MultistatPanelCtrl, [{
-          key: "updateNamedValue",
+          key: 'updateNamedValue',
           value: function updateNamedValue(obj, names, value) {
             var name = names.shift();
             if (obj[name]) {
@@ -223,62 +224,62 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             }
           }
         }, {
-          key: "onDataSnapshotLoad",
+          key: 'onDataSnapshotLoad',
           value: function onDataSnapshotLoad(snapshotData) {
             this.onDataReceived(snapshotData);
           }
         }, {
-          key: "onDataError",
+          key: 'onDataError',
           value: function onDataError(err) {
             this.seriesList = [];
             this.data = [];
-            this.displayStatusMessage("Query failure, Status=" + err.status + ", " + err.statusText);
+            this.displayStatusMessage('Query failure, Status=' + err.status + ', ' + err.statusText);
           }
         }, {
-          key: "onInitEditMode",
+          key: 'onInitEditMode',
           value: function onInitEditMode() {
-            this.metricNames = ["min", "max", "avg", "current", "total", "name", "first", "delta", "diff", "range"];
-            this.sortDirections = ["none", "ascending", "descending"];
-            this.aggregations = ["all", "last", "first", "mean", "max", "min", "sum"];
-            this.fontSizes = ["20%", "30%", "50%", "70%", "80%", "100%", "110%", "120%", "150%", "170%", "200%", "250%", "300%", "350%", "400%"];
-            this.valuePositions = ["bar base", "bar end", "top"];
-            this.curveTypes = ["Linear", "Monotone", "Cardinal", "Catmull-Rom"];
-            this.matchTypes = ["exact", "subset", "list", "reg-ex"];
-            this.tooltipTypes = ["light", "dark"];
-            this.addEditorTab("Columns", "public/plugins/michaeldmoore-multistat-panel/columns.html", 2);
-            this.addEditorTab("Layout", "public/plugins/michaeldmoore-multistat-panel/layout.html", 3);
-            this.addEditorTab("Grouping", "public/plugins/michaeldmoore-multistat-panel/grouping.html", 4);
-            this.addEditorTab("Options", "public/plugins/michaeldmoore-multistat-panel/options.html", 5);
-            this.addEditorTab("Lines-and-Limits", "public/plugins/michaeldmoore-multistat-panel/linesandlimits.html", 6);
-            this.addEditorTab("Bar links", "public/plugins/michaeldmoore-multistat-panel/barlinks.html", 7);
+            this.metricNames = ['min', 'max', 'avg', 'current', 'total', 'name', 'first', 'delta', 'diff', 'range'];
+            this.sortDirections = ['none', 'ascending', 'descending'];
+            this.aggregations = ['all', 'last', 'first', 'mean', 'max', 'min', 'sum'];
+            this.fontSizes = ['20%', '30%', '50%', '70%', '80%', '100%', '110%', '120%', '150%', '170%', '200%', '250%', '300%', '350%', '400%'];
+            this.valuePositions = ['bar base', 'bar end', 'top'];
+            this.curveTypes = ['Linear', 'Monotone', 'Cardinal', 'Catmull-Rom'];
+            this.matchTypes = ['exact', 'subset', 'list', 'reg-ex'];
+            this.tooltipTypes = ['light', 'dark'];
+            this.addEditorTab('Columns', 'public/plugins/michaeldmoore-multistat-panel/columns.html', 2);
+            this.addEditorTab('Layout', 'public/plugins/michaeldmoore-multistat-panel/layout.html', 3);
+            this.addEditorTab('Grouping', 'public/plugins/michaeldmoore-multistat-panel/grouping.html', 4);
+            this.addEditorTab('Options', 'public/plugins/michaeldmoore-multistat-panel/options.html', 5);
+            this.addEditorTab('Lines-and-Limits', 'public/plugins/michaeldmoore-multistat-panel/linesandlimits.html', 6);
+            this.addEditorTab('Bar links', 'public/plugins/michaeldmoore-multistat-panel/barlinks.html', 7);
           }
         }, {
-          key: "onDataReceived",
+          key: 'onDataReceived',
           value: function onDataReceived(data) {
             this.cols = [];
             // console.log('onDataReceived(' + JSON.stringify(data) + ')');
             if (data.length == 0) {
-              this.displayStatusMessage("No data to show");
+              this.displayStatusMessage('No data to show');
               this.data = data;
               this.rows = null;
               this.render();
-            } else if (data[0].type == "table" || data[0].columns) {
+            } else if (data[0].type == 'table' || data[0].columns) {
               this.data = data[0];
 
               for (var i = 0; i < this.data.columns.length; i++) {
                 this.cols[i] = this.data.columns[i].text;
-              }this.cols0 = [""].concat(this.cols);
+              }this.cols0 = [''].concat(this.cols);
 
               this.render();
             } else {
-              this.displayStatusMessage("Multistat only supports Table datasets");
+              this.displayStatusMessage('Multistat only supports Table datasets');
               this.data = data;
               this.rows = null;
               this.render();
             }
           }
         }, {
-          key: "onReorderValues",
+          key: 'onReorderValues',
           value: function onReorderValues(index, up) {
             var Values = this.ctrl.panel.Values;
             if (up) {
@@ -290,7 +291,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             this.render();
           }
         }, {
-          key: "onReorderRecolorRules",
+          key: 'onReorderRecolorRules',
           value: function onReorderRecolorRules(index, up) {
             var RecolorRules = this.ctrl.panel.RecolorRules;
             if (up) {
@@ -302,7 +303,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             this.render();
           }
         }, {
-          key: "onReorderLinks",
+          key: 'onReorderLinks',
           value: function onReorderLinks(index, up) {
             var Links = this.ctrl.panel.Links;
             if (up) {
@@ -314,10 +315,10 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             this.render();
           }
         }, {
-          key: "buildDateHtml",
+          key: 'buildDateHtml',
           value: function buildDateHtml(dateTimeCol) {
-            var $title = this.elem.closest(".panel-container").find(".panel-title");
-            var $maxDate = $title.find("span.michaeldmoore-multistat-panel-maxDate");
+            var $title = this.elem.closest('.panel-container').find('.panel-title');
+            var $maxDate = $title.find('span.michaeldmoore-multistat-panel-maxDate');
 
             if ($maxDate.length == 0) $maxDate = $title.append('<span class="michaeldmoore-multistat-panel-maxDate"/>').children().last();
 
@@ -328,18 +329,18 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 if (maxDate < this.rows[i][dateTimeCol]) maxDate = this.rows[i][dateTimeCol];
               }
 
-              var dd = moment(maxDate).add(this.panel.TZOffsetHours, "h");
+              var dd = moment(maxDate).add(this.panel.TZOffsetHours, 'h');
 
-              if (this.panel.DateFormat.toUpperCase() == "ELAPSED") $maxDate.text(dd.fromNow()).show();else $maxDate.text(dd.format(this.panel.DateFormat)).show();
+              if (this.panel.DateFormat.toUpperCase() == 'ELAPSED') $maxDate.text(dd.fromNow()).show();else $maxDate.text(dd.format(this.panel.DateFormat)).show();
             } else $maxDate.hide();
           }
         }, {
-          key: "displayStatusMessage",
+          key: 'displayStatusMessage',
           value: function displayStatusMessage(msg) {
-            this.elem.html("<div class='michaeldmoore-multistat-panel-statusmessage'>" + msg + "</div>");
+            this.elem.html("<div class='michaeldmoore-multistat-panel-statusmessage'>" + msg + '</div>');
           }
         }, {
-          key: "onRender",
+          key: 'onRender',
           value: function onRender() {
             var _this2 = this;
 
@@ -347,6 +348,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               var cols = this.cols;
               var dateTimeCol = -1;
               var labelCol = -1;
+              var endCol = -1;
               var sortCol = 0;
               var groupCol = -1;
               var recolorCol = -1;
@@ -354,6 +356,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               cols.forEach(function (colName, i) {
                 if (colName == _this2.panel.DateTimeColName) dateTimeCol = i;
                 if (colName == _this2.panel.LabelColName) labelCol = i;
+                if (colName == _this2.panel.EndColName) endCol = i;
                 if (colName == _this2.panel.SortColName) sortCol = i;
                 if (colName == _this2.panel.GroupColName) groupCol = i;
                 if (colName == _this2.panel.RecolorColName) recolorCol = i;
@@ -372,11 +375,11 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               //console.log('onRender: this.data.rows\n'+JSON.stringify(this.data.rows));
 
               var groupedLabelFunc = function groupedLabelFunc(obj) {
-                if (groupCol != -1) return obj[groupCol] + ":" + obj[labelCol];else return obj[labelCol];
+                if (groupCol != -1) return obj[groupCol] + ':' + obj[labelCol];else return obj[labelCol];
               };
 
               if (this.panel.LabelNameFilter.length > 0 && labelCol != -1) {
-                var regex = new RegExp(this.panel.LabelNameFilter, "");
+                var regex = new RegExp(this.panel.LabelNameFilter, '');
                 this.matchingRows = [];
                 for (var i = 0; i < this.data.rows.length; i++) {
                   var dd = this.data.rows[i];
@@ -385,16 +388,16 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 }
 
                 if (this.matchingRows.length == 0) {
-                  this.displayStatusMessage("No data.  Regex filter '" + this.panel.LabelNameFilter + "' eliminated all " + this.data.rows.length + " rows from current query");
+                  this.displayStatusMessage("No data.  Regex filter '" + this.panel.LabelNameFilter + "' eliminated all " + this.data.rows.length + ' rows from current query');
                   return;
                 }
               } else this.matchingRows = this.data.rows;
 
-              if (this.panel.Aggregate != "all" && labelCol != -1 && SelectedValues.length > 0) {
+              if (this.panel.Aggregate != 'all' && labelCol != -1 && SelectedValues.length > 0) {
                 var oo = [];
                 this.rows = [];
                 switch (this.panel.Aggregate) {
-                  case "first":
+                  case 'first':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       return d[0];
                     }).entries(this.matchingRows).forEach(function (x) {
@@ -403,7 +406,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = oo;
                     break;
 
-                  case "last":
+                  case 'last':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       return d[d.length - 1];
                     }).entries(this.matchingRows).forEach(function (x) {
@@ -412,7 +415,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = oo;
                     break;
 
-                  case "sum":
+                  case 'sum':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       var dd = Object.values(Object.assign({}, d[d.length - 1]));
                       SelectedValues.forEach(function (value) {
@@ -427,7 +430,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = Array.from(oo);
                     break;
 
-                  case "mean":
+                  case 'mean':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       var dd = Object.values(Object.assign({}, d[d.length - 1]));
                       SelectedValues.forEach(function (value) {
@@ -442,7 +445,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = Array.from(oo);
                     break;
 
-                  case "mean":
+                  case 'mean':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       var dd = Object.values(Object.assign({}, d[d.length - 1]));
                       dd[valueCol] = d3.mean(d, function (d) {
@@ -455,7 +458,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = Array.from(oo);
                     break;
 
-                  case "max":
+                  case 'max':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       var dd = Object.values(Object.assign({}, d[d.length - 1]));
                       SelectedValues.forEach(function (value) {
@@ -470,7 +473,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     this.rows = Array.from(oo);
                     break;
 
-                  case "min":
+                  case 'min':
                     this.rows = d3.nest().key(groupedLabelFunc).rollup(function (d) {
                       var dd = Object.values(Object.assign({}, d[d.length - 1]));
                       SelectedValues.forEach(function (value) {
@@ -491,7 +494,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
               //console.log('after aggregation('+this.panel.Aggregate+') this.rows:\n'+JSON.stringify(this.rows));
 
-              var groupNameOffset = this.panel.ShowGroupLabels ? Number(this.panel.GroupLabelFontSize.replace("%", "")) * 0.15 : 0;
+              var groupNameOffset = this.panel.ShowGroupLabels ? Number(this.panel.GroupLabelFontSize.replace('%', '')) * 0.15 : 0;
 
               if (groupCol >= 0) {
                 this.groupedRows = d3.nest().key(function (d) {
@@ -499,7 +502,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 }).entries(this.rows);
 
                 if (this.panel.GroupNameFilter.length > 0) {
-                  var regexGroupRows = new RegExp(this.panel.GroupNameFilter, "");
+                  var regexGroupRows = new RegExp(this.panel.GroupNameFilter, '');
                   var matchingGroups = [];
                   for (var _i = 0; _i < this.groupedRows.length; _i++) {
                     var groupName = this.groupedRows[_i].key;
@@ -507,7 +510,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   }
 
                   if (matchingGroups.length > 0) this.groupedRows = matchingGroups;else {
-                    this.displayStatusMessage("No groups.  Group Regex filter '" + this.panel.GroupNameFilter + "' eliminated all " + this.groupedRows.length + " groups from current query");
+                    this.displayStatusMessage("No groups.  Group Regex filter '" + this.panel.GroupNameFilter + "' eliminated all " + this.groupedRows.length + ' groups from current query');
                     return;
                   }
                 }
@@ -524,14 +527,14 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 this.groupedRows = null;
               }
 
-              this.elem.html("<div class='" + this.className + "' style='display: flex; flex-direction: column; height:100%; width:100%'>" + "</div>");
+              this.elem.html("<div class='" + this.className + "' style='display: flex; flex-direction: column; height:100%; width:100%'>" + '</div>');
 
-              var $container = this.elem.find("div");
+              var $container = this.elem.find('div');
 
-              this.svg = d3.select("." + this.className).append("svg").attr("height", "100%");
+              this.svg = d3.select('.' + this.className).append('svg').attr('height', '100%');
 
               if (this.panel.Legend) {
-                var $legend = $container.append("<div><p></p><ul class='michaeldmoore-multistat-panel-legend'></ul></div>").find("ul");
+                var $legend = $container.append("<div><p></p><ul class='michaeldmoore-multistat-panel-legend'></ul></div>").find('ul');
 
                 var legendValues = this.panel.Values.filter(function (value) {
                   return value.Col >= 0;
@@ -540,8 +543,8 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   ///////////////////////////////////////////////////////////////////////////////
                   // Be careful with this - the toggling/selection logic is quite complicated. //
                   ///////////////////////////////////////////////////////////////////////////////
-                  var deselectedClassName = value.Selected ? "" : " class='michaeldmoore-multistat-panel-legend-deselected'";
-                  $legend.append("<li" + deselectedClassName + ">" + value.Name + "</li>").children().last().css("background-color", value.HighBarColor).css("color", _this2.panel.ValueColor).click(function () {
+                  var deselectedClassName = value.Selected ? '' : " class='michaeldmoore-multistat-panel-legend-deselected'";
+                  $legend.append('<li' + deselectedClassName + '>' + value.Name + '</li>').children().last().css('background-color', value.HighBarColor).css('color', _this2.panel.ValueColor).click(function () {
                     if (window.event.ctrlKey) {
                       // toggle this item only
                       value.Selected = !value.Selected;
@@ -567,7 +570,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 });
               }
 
-              var h = $container.find("svg").height();
+              var h = $container.find('svg').height();
               var w = $container.width() - 15;
 
               this.buildDateHtml(dateTimeCol);
@@ -576,9 +579,9 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               var lowSideMargin = this.panel.LowSideMargin >= 0 ? this.panel.LowSideMargin : 0;
               var highSideMargin = this.panel.HighSideMargin >= 0 ? this.panel.HighSideMargin : 0;
 
-              this.svg.selectAll("rect.michaeldmoore-multistat-panel-bar.highflash").interrupt();
+              this.svg.selectAll('rect.michaeldmoore-multistat-panel-bar.highflash').interrupt();
 
-              this.svg.selectAll("rect.michaeldmoore-multistat-panel-bar.lowflash").interrupt();
+              this.svg.selectAll('rect.michaeldmoore-multistat-panel-bar.lowflash').interrupt();
 
               var id = this.panel.id;
               var barPadding = this.panel.BarPadding;
@@ -615,8 +618,8 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               var ScaleFactor = Number(this.panel.ScaleFactor);
               var ValuePosition = this.panel.ValuePosition;
 
-              var panelID = "michaeldmoore-multistat-panel-" + id;
-              var tooltipDivID = "michaeldmoore-multistat-panel-tooltip-" + id;
+              var panelID = 'michaeldmoore-multistat-panel-' + id;
+              var tooltipDivID = 'michaeldmoore-multistat-panel-tooltip-' + id;
 
               var minValue = SelectedValues.length && d3.min(this.rows, function (d) {
                 var min = Number(d[SelectedValues[0].Col]);
@@ -650,11 +653,11 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
               if ($.isNumeric(highLimitValue) && maxLineValue < highLimitValue) maxLineValue = highLimitValue;
 
-              $("#" + tooltipDivID).remove();
+              $('#' + tooltipDivID).remove();
 
               var sortData = function sortData(data, sortDirection) {
-                if (sortDirection != "none") {
-                  var ascending = sortDirection == "ascending";
+                if (sortDirection != 'none') {
+                  var ascending = sortDirection == 'ascending';
                   data.sort(function (x, y) {
                     var xx = x[sortCol];
                     var yy = y[sortCol];
@@ -671,7 +674,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                 var g = re.exec(s);
                 while (g) {
                   for (var i = 0; i < cols.length; i++) {
-                    if (g == "{" + cols[i] + "}") {
+                    if (g == '{' + cols[i] + '}') {
                       s1 = s1.replace(g, d[i]);
                       break;
                     }
@@ -682,32 +685,32 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               };
 
               var getTooltipContent = function getTooltipContent(d) {
-                var html = "";
+                var html = '';
                 if (tooltipType) {
-                  html += "<table style='font-size:" + tooltipFontSize.replace("%", "") / 100 + "em'>";
-                  if (labelCol != -1) html += "<thead><tr class='michaeldmoore-multistat-panel-tooltip-title'><th colspan='2' align='center'>" + d[labelCol] + "</th></tr></thead>";
+                  html += "<table style='font-size:" + tooltipFontSize.replace('%', '') / 100 + "em'>";
+                  if (labelCol != -1) html += "<thead><tr class='michaeldmoore-multistat-panel-tooltip-title'><th colspan='2' align='center'>" + d[labelCol] + '</th></tr></thead>';
                   if (Array.isArray(d)) {
-                    html += "<tbody>";
+                    html += '<tbody>';
                     for (var i = 0; i < d.length; i++) {
                       if (i != labelCol) {
                         var cc = cols[i];
                         var dd = d[i];
 
-                        if (cc == DateTimeColName) dd = moment(dd).add(TZOffsetHours, "h").format(TooltipDateFormat);else if (cc == ValueColName && $.isNumeric(dd)) dd = Number(dd).toFixed(ValueDecimals);
+                        if (cc == DateTimeColName) dd = moment(dd).add(TZOffsetHours, 'h').format(TooltipDateFormat);else if (cc == ValueColName && $.isNumeric(dd)) dd = Number(dd).toFixed(ValueDecimals);
 
-                        html += "<tr><td>" + cc + "</td><td>" + dd + "</td></tr>";
+                        html += '<tr><td>' + cc + '</td><td>' + dd + '</td></tr>';
                       }
                     }
-                    html += "</tbody></table>";
+                    html += '</tbody></table>';
                   }
                 }
 
                 if (Links.length) {
-                  html += "<table><tbody>";
+                  html += '<table><tbody>';
                   Links.forEach(function (l) {
-                    html += "<tr><td align='right'><i class='fa fa-link'></i></td><td><a href='" + translateValues(l.url, d) + (l.newtab ? "' target='_blank'" : "'") + ">" + translateValues(l.name, d) + "</a></td></tr>";
+                    html += "<tr><td align='right'><i class='fa fa-link'></i></td><td><a href='" + translateValues(l.url, d) + (l.newtab ? "' target='_blank'" : "'") + '>' + translateValues(l.name, d) + '</a></td></tr>';
                   });
-                  html += "</tbody></table>";
+                  html += '</tbody></table>';
                 }
                 return html;
               };
@@ -717,26 +720,26 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               var $panelContent;
               var panelContent;
               var tooltipShow = function tooltipShow(d) {
-                if ($("#" + tooltipDivID).length == 0) {
-                  $panel = $("." + panelID);
+                if ($('#' + tooltipDivID).length == 0) {
+                  $panel = $('.' + panelID);
                   //          $panelContent = this.elem.closest(".panel-content");
                   $panelContent = $panel.parent().parent().parent().parent();
                   panelContent = d3.selectAll($panelContent);
-                  panelContent.append("div").attr("id", tooltipDivID).style("opacity", 0);
+                  panelContent.append('div').attr('id', tooltipDivID).style('opacity', 0);
                 }
 
-                var tooltipDiv = d3.selectAll("#" + tooltipDivID);
-                tooltipDiv.classed("michaeldmoore-multistat-panel-" + tooltipType + "-tooltip", true).html(getTooltipContent(d)).on("mouseover", function () {
+                var tooltipDiv = d3.selectAll('#' + tooltipDivID);
+                tooltipDiv.classed('michaeldmoore-multistat-panel-' + tooltipType + '-tooltip', true).html(getTooltipContent(d)).on('mouseover', function () {
                   if (!isInTooltip) {
                     isInTooltip = true;
                     tooltipHide(true);
                   }
-                }).on("mouseleave", function () {
+                }).on('mouseleave', function () {
                   isInTooltip = false;
                   tooltipHide(false);
                 });
 
-                var $tooltipDiv = $("#" + tooltipDivID);
+                var $tooltipDiv = $('#' + tooltipDivID);
                 var tooltipWidth = $tooltipDiv.width();
                 var tooltipHeight = $tooltipDiv.height();
                 var minTop = 28;
@@ -752,18 +755,18 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                 if (Top < 0) Top = 0;else if (Top > panelHeight + minTop - tooltipHeight) Top = panelHeight + minTop - tooltipHeight;
 
-                tooltipDiv.transition().duration(200).style("opacity", 1.0).style("left", Left + "px").style("top", Top + "px");
+                tooltipDiv.transition().duration(200).style('opacity', 1.0).style('left', Left + 'px').style('top', Top + 'px');
               };
 
               var tooltipHide = function tooltipHide(cancel) {
-                var tooltipDiv = d3.selectAll("#" + tooltipDivID);
+                var tooltipDiv = d3.selectAll('#' + tooltipDivID);
 
                 if (cancel) {
                   //console.log("cancelling tooltip hide");
-                  tooltipDiv.transition().style("opacity", 1.0);
+                  tooltipDiv.transition().style('opacity', 1.0);
                 } else {
-                  tooltipDiv.transition().duration(2000).style("opacity", 0).on("end", function () {
-                    d3.select(this).html("").classed("michaeldmoore-multistat-panel-" + tooltipType + "-tooltip", false);
+                  tooltipDiv.transition().duration(2000).style('opacity', 0).on('end', function () {
+                    d3.select(this).html('').classed('michaeldmoore-multistat-panel-' + tooltipType + '-tooltip', false);
                   });
                 }
               };
@@ -785,14 +788,14 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                       var recolorRule = RecolorRules.find(function (r) {
                         if (r.pattern) {
                           switch (r.matchType) {
-                            case "reg-ex":
+                            case 'reg-ex':
                               var re = RegExp(r.pattern);
                               return re.test(recolorString);
 
-                            case "list":
+                            case 'list':
                               return r.pattern.indexOf(recolorString) != -1;
 
-                            case "subset":
+                            case 'subset':
                               return recolorString.indexOf(r.pattern) != -1;
 
                             default:
@@ -809,7 +812,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   // no matching rule found, check if recolorString is a valid color
                   var s = new Option().style;
                   s.color = recolorString;
-                  if (s.color !== "") return recolorString;
+                  if (s.color !== '') return recolorString;
                 }
 
                 var value = d[valueDef.Col] * ScaleFactor;
@@ -833,8 +836,8 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   sortData(data, panel.SortDirection);
 
                   // Add Above-High Side Group Names
-                  if (groupName != "" && panel.ShowGroupLabels) {
-                    svg.append("text").text(groupName).attr("x", left + (labelMargin + w) / 2).attr("y", hh + groupNameOffset / 2).attr("font-family", "sans-serif").attr("font-size", panel.GroupLabelFontSize).attr("fill", panel.GroupLabelColor).attr("background", "blue").attr("text-anchor", "middle").attr("dominant-baseline", "central");
+                  if (groupName != '' && panel.ShowGroupLabels) {
+                    svg.append('text').text(groupName).attr('x', left + (labelMargin + w) / 2).attr('y', hh + groupNameOffset / 2).attr('font-family', 'sans-serif').attr('font-size', panel.GroupLabelFontSize).attr('fill', panel.GroupLabelColor).attr('background', 'blue').attr('text-anchor', 'middle').attr('dominant-baseline', 'central');
                   }
 
                   hh += groupNameOffset;
@@ -852,7 +855,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     return d[labelCol];
                   });
                   while (labels.length < numRows) {
-                    labels = labels.concat("_" + Math.random().toString(36).substr(2, 9));
+                    labels = labels.concat('_' + Math.random().toString(36).substr(2, 9));
                   }var labelScale = d3.scaleBand().domain(labels).rangeRound([hh + highSideMargin, hh + dh - lowSideMargin]).paddingInner(barPadding / 100).paddingOuter(barPadding / 200);
 
                   var stripedata = data.concat(d3.range(data.length, numRows));
@@ -861,16 +864,16 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                   // Draw background of alternating stripes
                   var oddeven = false;
-                  svg.append("g").selectAll("rect").data(stripedata).enter().append("rect").attr("class", "michaeldmoore-multistat-panel-row").attr("width", w).attr("height", stripeScale.step()).attr("x", left).attr("y", function (d) {
+                  svg.append('g').selectAll('rect').data(stripedata).enter().append('rect').attr('class', 'michaeldmoore-multistat-panel-row').attr('width', w).attr('height', stripeScale.step()).attr('x', left).attr('y', function (d) {
                     return stripeScale(d);
-                  }).attr("fill", function (d) {
+                  }).attr('fill', function (d) {
                     oddeven = !oddeven;
                     return oddeven ? OddRowColor : EvenRowColor;
                   });
 
-                  var g1 = svg.append("g").selectAll("text").data(data).enter().append("g");
+                  var g1 = svg.append('g').selectAll('text').data(data).enter().append('g');
 
-                  if (panel.ShowValues && panel.ValuePosition == "top") {
+                  if (panel.ShowValues && panel.ValuePosition == 'top') {
                     var maxValueWidth = 0;
                     SelectedValues.forEach(function (valueDef, index) {
                       var valueCol = valueDef.Col;
@@ -878,11 +881,11 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var height = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g1.append("text").text(function (d) {
+                        g1.append('text').text(function (d) {
                           return (Number(d[valueCol]) * ScaleFactor).toFixed(ValueDecimals);
-                        }).attr("x", left + w).attr("y", function (d, i) {
+                        }).attr('x', left + w).attr('y', function (d, i) {
                           return labelScale(d[labelCol]) + height / 2 + (height + gap) * index;
-                        }).attr("font-family", "sans-serif").attr("font-size", panel.ValueFontSize).attr("fill", panel.ValueColor).attr("text-anchor", "end").attr("dominant-baseline", "central").each(function (d, i) {
+                        }).attr('font-family', 'sans-serif').attr('font-size', panel.ValueFontSize).attr('fill', panel.ValueColor).attr('text-anchor', 'end').attr('dominant-baseline', 'central').each(function (d, i) {
                           var thisWidth = this.getComputedTextLength();
                           maxValueWidth = d3.max([maxValueWidth, thisWidth]);
                         });
@@ -895,9 +898,9 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   if (panel.ShowLabels) {
                     var maxLabelWidth = 0;
                     var labelAngle = Number(panel.LableAngle);
-                    g1.append("text").text(function (d) {
+                    g1.append('text').text(function (d) {
                       return d[labelCol];
-                    }).attr("font-family", "sans-serif").attr("font-size", panel.LabelFontSize).attr("fill", function (d, i) {
+                    }).attr('font-family', 'sans-serif').attr('font-size', panel.LabelFontSize).attr('fill', function (d, i) {
                       if (SelectedValues.length) {
                         var minvalue = d[SelectedValues[0].Col] * ScaleFactor;
                         var maxvalue = minvalue;
@@ -910,7 +913,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         if (maxvalue > maxLineValue || minvalue < minLineValue) return panel.OutOfRangeLabelColor;
                       }
                       return panel.LabelColor;
-                    }).attr("text-anchor", "middle").attr("dominant-baseline", "central").attr("transform", function (d, i) {
+                    }).attr('text-anchor', 'middle').attr('dominant-baseline', 'central').attr('transform', function (d, i) {
                       var bbox = this.getBBox();
                       var s = Math.sin(labelAngle * Math.PI / 180);
                       var c = Math.cos(labelAngle * Math.PI / 180);
@@ -919,7 +922,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                       var y = labelScale(d[labelCol]) + labelScale.bandwidth() / 2;
                       var x = left + a / 2;
-                      return "translate(" + x + "," + y + ") rotate(" + labelAngle + ")";
+                      return 'translate(' + x + ',' + y + ') rotate(' + labelAngle + ')';
                     }).each(function (d, i) {
                       var bbox = this.getBBox();
                       var s = Math.sin(labelAngle * Math.PI / 180);
@@ -943,7 +946,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   var valueScale = d3.scaleLinear().domain([minLineValue, maxLineValue]).range([left + labelMargin, left + w]).nice();
 
                   function vLine(svg, value, color, strokeWidth) {
-                    svg.append("line").style("stroke", color).attr("stroke-width", strokeWidth == null ? 1 : strokeWidth).attr("y1", hh + highSideMargin).attr("x1", valueScale(value)).attr("y2", hh + dh - lowSideMargin).attr("x2", valueScale(value));
+                    svg.append('line').style('stroke', color).attr('stroke-width', strokeWidth == null ? 1 : strokeWidth).attr('y1', hh + highSideMargin).attr('x1', valueScale(value)).attr('y2', hh + dh - lowSideMargin).attr('x2', valueScale(value));
                   }
 
                   if (panel.ShowBaseLine) vLine(svg, baseLineValue, panel.BaseLineColor, panel.BaseLineWidth);
@@ -963,19 +966,19 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var height = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g1.append("rect").attr("class", "michaeldmoore-multistat-panel-bar").attr("width", function (d) {
+                        g1.append('rect').attr('class', 'michaeldmoore-multistat-panel-bar').attr('width', function (d) {
                           var val = scaleAndClipValue(d[valueCol]);
                           return Math.abs(valueScale(val) - valueScale(baseLineValue));
-                        }).attr("height", height).attr("x", function (d) {
+                        }).attr('height', height).attr('x', function (d) {
                           var val = scaleAndClipValue(d[valueCol]);
                           return d3.min([valueScale(val), valueScale(baseLineValue)]);
-                        }).attr("y", function (d, i) {
+                        }).attr('y', function (d, i) {
                           return labelScale(d[labelCol]) + (height + gap) * index;
-                        }).attr("fill", function (d) {
+                        }).attr('fill', function (d) {
                           return getBarColor(d, valueDef);
-                        }).classed("highflash", function (d) {
+                        }).classed('highflash', function (d) {
                           return recolorHighLimitBar && flashHighLimitBar && d[valueCol] * ScaleFactor > highLimitValue;
-                        }).classed("lowflash", function (d) {
+                        }).classed('lowflash', function (d) {
                           return recolorLowLimitBar && flashLowLimitBar && d[valueCol] * ScaleFactor < lowLimitValue;
                         });
                       }
@@ -988,16 +991,16 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     if (panel.LineWidth) {
                       var curveFunc = d3.curveLinear;
                       switch (panel.CurveType) {
-                        case "Linear":
+                        case 'Linear':
                           curveFunc = d3.curveLinear;
                           break;
-                        case "Monotone":
+                        case 'Monotone':
                           curveFunc = d3.curveMonotoneY;
                           break;
-                        case "Cardinal":
+                        case 'Cardinal':
                           curveFunc = d3.curveCardinal;
                           break;
-                        case "Catmull-Rom":
+                        case 'Catmull-Rom':
                           curveFunc = d3.curveCatmullRom;
                           break;
                       }
@@ -1024,13 +1027,13 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                             });
                           }
 
-                          svg.append("path").attr("d", lineFunction(points)).attr("stroke", panel.LineColor).attr("stroke-width", panel.LineWidth).attr("fill", "none");
+                          svg.append('path').attr('d', lineFunction(points)).attr('stroke', panel.LineColor).attr('stroke-width', panel.LineWidth).attr('fill', 'none');
                         }
 
                         if (panel.DotSize) {
-                          g1.append("circle").attr("r", panel.DotSize / 2.0).attr("fill", panel.DotColor).attr("cy", function (d) {
+                          g1.append('circle').attr('r', panel.DotSize / 2.0).attr('fill', panel.DotColor).attr('cy', function (d) {
                             return labelScale(d[labelCol]) + width / 2 + (width + gap) * index;
-                          }).attr("cx", function (d) {
+                          }).attr('cx', function (d) {
                             return valueScale(d[value.Col] * ScaleFactor);
                           });
                         }
@@ -1038,37 +1041,41 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     }
                   }
 
-                  if (panel.ShowValues && panel.ValuePosition != "top") {
+                  if (panel.ShowValues && panel.ValuePosition != 'top') {
                     SelectedValues.forEach(function (valueDef, index) {
                       var valueCol = valueDef.Col;
                       if (valueCol >= 0) {
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var height = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g1.append("text").text(function (d) {
-                          return (Number(d[valueCol]) * ScaleFactor).toFixed(ValueDecimals);
-                        }).attr("x", function (d) {
-                          if (panel.ValuePosition == "bar base") return valueScale(baseLineValue);else {
+                        g1.append('text').text(function (d) {
+                          if (endCol != -1) {
+                            return (Number(d[endCol]) * ScaleFactor).toFixed(ValueDecimals);
+                          } else {
+                            return (Number(d[valueCol]) * ScaleFactor).toFixed(ValueDecimals);
+                          }
+                        }).attr('x', function (d) {
+                          if (panel.ValuePosition == 'bar base') return valueScale(baseLineValue);else {
                             // "bar end"
                             var val = scaleAndClipValue(d[valueCol]);
                             return valueScale(val) + (val > baseLineValue);
                           }
-                        }).attr("y", function (d, i) {
+                        }).attr('y', function (d, i) {
                           return labelScale(d[labelCol]) + height / 2 + (height + gap) * index;
-                        }).attr("font-family", "sans-serif").attr("font-size", panel.ValueFontSize).attr("fill", panel.ValueColor).attr("text-anchor", function (d) {
-                          if (panel.ValuePosition == "bar base") return d[valueCol] * ScaleFactor > baseLineValue ? "start" : "end";
+                        }).attr('font-family', 'sans-serif').attr('font-size', panel.ValueFontSize).attr('fill', panel.ValueColor).attr('text-anchor', function (d) {
+                          if (panel.ValuePosition == 'bar base') return d[valueCol] * ScaleFactor > baseLineValue ? 'start' : 'end';
                           // "bar end"
-                          else return d[valueCol] * ScaleFactor > baseLineValue ? "end" : "start";
-                        }).attr("dominant-baseline", "central");
+                          else return d[valueCol] * ScaleFactor > baseLineValue ? 'end' : 'start';
+                        }).attr('dominant-baseline', 'central');
                       }
                     });
                   }
 
-                  svg.append("g").selectAll("rect").data(stripedata).enter().append("rect").attr("width", w).attr("height", stripeScale.step()).attr("x", left).attr("y", function (d) {
+                  svg.append('g').selectAll('rect').data(stripedata).enter().append('rect').attr('width', w).attr('height', stripeScale.step()).attr('x', left).attr('y', function (d) {
                     return stripeScale(d);
-                  }).attr("fill", "rgba(0,0,0,0)").attr("stroke", OutlineColor).on("mouseover", function (d) {
+                  }).attr('fill', 'rgba(0,0,0,0)').attr('stroke', OutlineColor).on('mouseover', function (d) {
                     if (tooltipType && Array.isArray(d) || Links.length) tooltipShow(d);
-                  }).on("mouseleave", function () {
+                  }).on('mouseleave', function () {
                     if (!isInTooltip) {
                       tooltipHide(false);
                     }
@@ -1076,24 +1083,24 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                   // Add High Side Value Axis (X)
                   if (highSideMargin > 0) {
-                    var ggHighSide = svg.append("g").attr("transform", "translate(1," + (hh + highSideMargin) + ")").attr("class", "michaeldmoore-multistat-panel-valueaxis").call(d3.axisTop(valueScale));
+                    var ggHighSide = svg.append('g').attr('transform', 'translate(1,' + (hh + highSideMargin) + ')').attr('class', 'michaeldmoore-multistat-panel-valueaxis').call(d3.axisTop(valueScale));
 
-                    ggHighSide.selectAll(".tick text").attr("fill", panel.HighAxisColor);
+                    ggHighSide.selectAll('.tick text').attr('fill', panel.HighAxisColor);
 
-                    ggHighSide.selectAll(".tick line").attr("stroke", panel.HighAxisColor).attr("stroke-width", panel.HighAxisWidth);
+                    ggHighSide.selectAll('.tick line').attr('stroke', panel.HighAxisColor).attr('stroke-width', panel.HighAxisWidth);
 
-                    ggHighSide.selectAll("path.domain").attr("stroke", panel.HighAxisColor).attr("stroke-width", panel.HighAxisWidth);
+                    ggHighSide.selectAll('path.domain').attr('stroke', panel.HighAxisColor).attr('stroke-width', panel.HighAxisWidth);
                   }
 
                   // Add Low Side Value Axis (X)
                   if (lowSideMargin > 0) {
-                    var ggLowSide = svg.append("g").attr("transform", "translate(0," + (hh + dh - lowSideMargin) + ")").attr("class", "michaeldmoore-multistat-panel-valueaxis").call(d3.axisBottom(valueScale));
+                    var ggLowSide = svg.append('g').attr('transform', 'translate(0,' + (hh + dh - lowSideMargin) + ')').attr('class', 'michaeldmoore-multistat-panel-valueaxis').call(d3.axisBottom(valueScale));
 
-                    ggLowSide.selectAll(".tick text").attr("fill", panel.LowAxisColor);
+                    ggLowSide.selectAll('.tick text').attr('fill', panel.LowAxisColor);
 
-                    ggLowSide.selectAll(".tick line").attr("stroke", panel.LowAxisColor).attr("stroke-width", panel.LowAxisWidth);
+                    ggLowSide.selectAll('.tick line').attr('stroke', panel.LowAxisColor).attr('stroke-width', panel.LowAxisWidth);
 
-                    ggLowSide.selectAll("path.domain").attr("stroke", panel.LowAxisColor).attr("stroke-width", panel.LowAxisWidth);
+                    ggLowSide.selectAll('path.domain').attr('stroke', panel.LowAxisColor).attr('stroke-width', panel.LowAxisWidth);
                   }
                 };
 
@@ -1131,7 +1138,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     }
                   }
                 } else {
-                  plotGroupHorizontal(this.panel, this.svg, this.rows, this.rows.length, "", 0, 0, w, 0, h);
+                  plotGroupHorizontal(this.panel, this.svg, this.rows, this.rows.length, '', 0, 0, w, 0, h);
                 }
               } else {
                 var plotGroupVertical = function plotGroupVertical(panel, svg, data, numRows, groupName, groupNameOffset, left, w, hh, dh) {
@@ -1146,8 +1153,8 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   sortData(data, panel.SortDirection);
 
                   // Add Above-High Side Group Names
-                  if (groupName != "" && panel.ShowGroupLabels) {
-                    svg.append("text").text(groupName).attr("x", left + (labelMargin + w) / 2).attr("y", hh + groupNameOffset / 2).attr("font-family", "sans-serif").attr("font-size", panel.GroupLabelFontSize).attr("fill", panel.GroupLabelColor).attr("background", "blue").attr("text-anchor", "middle").attr("dominant-baseline", "central");
+                  if (groupName != '' && panel.ShowGroupLabels) {
+                    svg.append('text').text(groupName).attr('x', left + (labelMargin + w) / 2).attr('y', hh + groupNameOffset / 2).attr('font-family', 'sans-serif').attr('font-size', panel.GroupLabelFontSize).attr('fill', panel.GroupLabelColor).attr('background', 'blue').attr('text-anchor', 'middle').attr('dominant-baseline', 'central');
                   }
 
                   hh += groupNameOffset;
@@ -1165,7 +1172,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     return d[labelCol];
                   });
                   while (labels.length < numRows) {
-                    labels = labels.concat("_" + Math.random().toString(36).substr(2, 9));
+                    labels = labels.concat('_' + Math.random().toString(36).substr(2, 9));
                   }var labelScale = d3.scaleBand().domain(labels).range([left + lowSideMargin, left + w - highSideMargin]).paddingInner(barPadding / 100).paddingOuter(barPadding / 200);
 
                   var stripedata = data.concat(d3.range(data.length, numRows));
@@ -1174,16 +1181,16 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                   // Draw background of alternating stripes
                   var oddeven = false;
-                  svg.append("g").selectAll("rect").data(stripedata).enter().append("rect").attr("class", "michaeldmoore-multistat-panel-row").attr("width", stripeScale.step()).attr("height", dh).attr("x", function (d, i) {
+                  svg.append('g').selectAll('rect').data(stripedata).enter().append('rect').attr('class', 'michaeldmoore-multistat-panel-row').attr('width', stripeScale.step()).attr('height', dh).attr('x', function (d, i) {
                     return stripeScale(d);
-                  }).attr("y", hh).attr("fill", function (d) {
+                  }).attr('y', hh).attr('fill', function (d) {
                     oddeven = !oddeven;
                     return oddeven ? OddRowColor : EvenRowColor;
                   });
 
-                  var g2 = svg.append("g").selectAll("text").data(data).enter().append("g");
+                  var g2 = svg.append('g').selectAll('text').data(data).enter().append('g');
 
-                  if (panel.ShowValues && panel.ValuePosition == "top") {
+                  if (panel.ShowValues && panel.ValuePosition == 'top') {
                     var maxValueHeight = 0;
 
                     SelectedValues.forEach(function (valueDef, index) {
@@ -1192,11 +1199,11 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var width = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g2.append("text").text(function (d) {
+                        g2.append('text').text(function (d) {
                           return (Number(d[valueCol]) * ScaleFactor).toFixed(ValueDecimals);
-                        }).attr("x", function (d, i) {
+                        }).attr('x', function (d, i) {
                           return labelScale(d[labelCol]) + width / 2 + (width + gap) * index;
-                        }).attr("y", hh).attr("font-family", "sans-serif").attr("font-size", panel.ValueFontSize).attr("fill", panel.ValueColor).attr("text-anchor", "middle").attr("dominant-baseline", "text-before-edge").each(function (d, i) {
+                        }).attr('y', hh).attr('font-family', 'sans-serif').attr('font-size', panel.ValueFontSize).attr('fill', panel.ValueColor).attr('text-anchor', 'middle').attr('dominant-baseline', 'text-before-edge').each(function (d, i) {
                           var thisHeight = this.getBBox().height;
                           maxValueHeight = d3.max([maxValueHeight, thisHeight]);
                         });
@@ -1210,9 +1217,9 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   if (panel.ShowLabels) {
                     var maxLabelHeight = 0;
                     var labelAngle = Number(panel.LableAngle);
-                    g2.append("text").text(function (d) {
+                    g2.append('text').text(function (d) {
                       return d[labelCol];
-                    }).attr("font-family", "sans-serif").attr("font-size", panel.LabelFontSize).attr("fill", function (d, i) {
+                    }).attr('font-family', 'sans-serif').attr('font-size', panel.LabelFontSize).attr('fill', function (d, i) {
                       if (SelectedValues.length) {
                         // This should check ALL the SelectedValues, bot just [0]///////////////////////////////////////////////
                         var minvalue = d[SelectedValues[0].Col] * ScaleFactor;
@@ -1221,7 +1228,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         if (maxvalue > maxLineValue || minvalue < minLineValue) return panel.OutOfRangeLabelColor;
                       }
                       return panel.LabelColor;
-                    }).attr("text-anchor", "middle").attr("dominant-baseline", "central").attr("transform", function (d, i) {
+                    }).attr('text-anchor', 'middle').attr('dominant-baseline', 'central').attr('transform', function (d, i) {
                       var bbox = this.getBBox();
                       var s = Math.sin(labelAngle * Math.PI / 180);
                       var c = Math.cos(labelAngle * Math.PI / 180);
@@ -1230,7 +1237,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
 
                       var x = labelScale(d[labelCol]) + labelScale.bandwidth() / 2;
                       var y = hh + dh - b / 2;
-                      return "translate(" + x + "," + y + ") rotate(" + labelAngle + ")";
+                      return 'translate(' + x + ',' + y + ') rotate(' + labelAngle + ')';
                     }).each(function (d, i) {
                       var bbox = this.getBBox();
                       var s = Math.sin(labelAngle * Math.PI / 180);
@@ -1251,7 +1258,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                   var valueScale = d3.scaleLinear().domain([maxLineValue, minLineValue]).range([hh, hh + dh]).nice();
 
                   function hLine(svg, value, color, strokeWidth) {
-                    svg.append("line").style("stroke", color).attr("stroke-width", strokeWidth == null ? 1 : strokeWidth).attr("x1", left + lowSideMargin).attr("y1", valueScale(value)).attr("x2", left + w - highSideMargin).attr("y2", valueScale(value));
+                    svg.append('line').style('stroke', color).attr('stroke-width', strokeWidth == null ? 1 : strokeWidth).attr('x1', left + lowSideMargin).attr('y1', valueScale(value)).attr('x2', left + w - highSideMargin).attr('y2', valueScale(value));
                   }
 
                   if (panel.ShowBaseLine) hLine(svg, baseLineValue, panel.BaseLineColor, panel.BaseLineWidth);
@@ -1271,19 +1278,19 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var width = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g2.append("rect").attr("class", "michaeldmoore-multistat-panel-bar").attr("height", function (d) {
+                        g2.append('rect').attr('class', 'michaeldmoore-multistat-panel-bar').attr('height', function (d) {
                           var val = scaleAndClipValue(d[valueCol]);
                           return Math.abs(valueScale(baseLineValue) - valueScale(val));
-                        }).attr("width", width).attr("y", function (d) {
+                        }).attr('width', width).attr('y', function (d) {
                           var val = scaleAndClipValue(d[valueCol]);
                           return d3.min([valueScale(val), valueScale(baseLineValue)]);
-                        }).attr("x", function (d, i) {
+                        }).attr('x', function (d, i) {
                           return labelScale(d[labelCol]) + (width + gap) * index;
-                        }).attr("fill", function (d) {
+                        }).attr('fill', function (d) {
                           return getBarColor(d, valueDef);
-                        }).classed("highflash", function (d) {
+                        }).classed('highflash', function (d) {
                           return recolorHighLimitBar && flashHighLimitBar && d[valueCol] * ScaleFactor > highLimitValue;
-                        }).classed("lowflash", function (d) {
+                        }).classed('lowflash', function (d) {
                           return recolorLowLimitBar && flashLowLimitBar && d[valueCol] * ScaleFactor < lowLimitValue;
                         });
                       }
@@ -1296,16 +1303,16 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     if (panel.LineWidth) {
                       var curveFunc = d3.curveLinear;
                       switch (panel.CurveType) {
-                        case "Linear":
+                        case 'Linear':
                           curveFunc = d3.curveLinear;
                           break;
-                        case "Monotone":
+                        case 'Monotone':
                           curveFunc = d3.curveMonotoneX;
                           break;
-                        case "Cardinal":
+                        case 'Cardinal':
                           curveFunc = d3.curveCardinal;
                           break;
-                        case "Catmull-Rom":
+                        case 'Catmull-Rom':
                           curveFunc = d3.curveCatmullRom;
                           break;
                       }
@@ -1332,13 +1339,13 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                             });
                           }
 
-                          svg.append("path").attr("d", lineFunction(points)).attr("stroke", panel.LineColor).attr("stroke-width", panel.LineWidth).attr("fill", "none");
+                          svg.append('path').attr('d', lineFunction(points)).attr('stroke', panel.LineColor).attr('stroke-width', panel.LineWidth).attr('fill', 'none');
                         }
 
                         if (panel.DotSize) {
-                          g2.append("circle").attr("r", panel.DotSize / 2.0).attr("fill", panel.DotColor).attr("cx", function (d) {
+                          g2.append('circle').attr('r', panel.DotSize / 2.0).attr('fill', panel.DotColor).attr('cx', function (d) {
                             return labelScale(d[labelCol]) + width / 2 + (width + gap) * index;
-                          }).attr("cy", function (d) {
+                          }).attr('cy', function (d) {
                             return valueScale(d[value.Col] * ScaleFactor);
                           });
                         }
@@ -1346,55 +1353,55 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     }
                   }
 
-                  if (panel.ShowValues && panel.ValuePosition != "top") {
+                  if (panel.ShowValues && panel.ValuePosition != 'top') {
                     SelectedValues.forEach(function (valueDef, index) {
                       var valueCol = valueDef.Col;
                       if (valueCol >= 0) {
                         var gap = SelectedValues.length > 1 ? labelScale.bandwidth() * multiBarPadding / (SelectedValues.length - 1) / 100 : 0;
                         var width = (labelScale.bandwidth() - gap * (SelectedValues.length - 1)) / SelectedValues.length;
 
-                        g2.append("text").text(function (d) {
+                        g2.append('text').text(function (d) {
                           return (Number(d[valueCol]) * ScaleFactor).toFixed(ValueDecimals);
-                        }).attr("x", function (d, i) {
+                        }).attr('x', function (d, i) {
                           return labelScale(d[labelCol]) + width / 2 + (width + gap) * index;
-                        }).attr("y", function (d) {
-                          if (ValuePosition == "bar base") return valueScale(baseLineValue);else {
+                        }).attr('y', function (d) {
+                          if (ValuePosition == 'bar base') return valueScale(baseLineValue);else {
                             var val = scaleAndClipValue(d[valueCol]);
                             return valueScale(val);
                           }
-                        }).attr("font-family", "sans-serif").attr("font-size", panel.ValueFontSize).attr("fill", panel.ValueColor).attr("text-anchor", "middle").attr("dominant-baseline", function (d) {
-                          if (ValuePosition == "bar base") return d[valueCol] * ScaleFactor > baseLineValue ? "text-after-edge" : "text-before-edge";else return d[valueCol] * ScaleFactor > baseLineValue ? "text-before-edge" : "text-after-edge";
+                        }).attr('font-family', 'sans-serif').attr('font-size', panel.ValueFontSize).attr('fill', panel.ValueColor).attr('text-anchor', 'middle').attr('dominant-baseline', function (d) {
+                          if (ValuePosition == 'bar base') return d[valueCol] * ScaleFactor > baseLineValue ? 'text-after-edge' : 'text-before-edge';else return d[valueCol] * ScaleFactor > baseLineValue ? 'text-before-edge' : 'text-after-edge';
                         });
                       }
                     });
                   }
 
-                  svg.append("g").selectAll("rect").data(stripedata).enter().append("rect").attr("width", stripeScale.step()).attr("height", dh).attr("x", function (d) {
+                  svg.append('g').selectAll('rect').data(stripedata).enter().append('rect').attr('width', stripeScale.step()).attr('height', dh).attr('x', function (d) {
                     return stripeScale(d);
-                  }).attr("y", hh).attr("fill", "rgba(0,0,0,0)").attr("stroke", OutlineColor).on("mouseover", function (d) {
+                  }).attr('y', hh).attr('fill', 'rgba(0,0,0,0)').attr('stroke', OutlineColor).on('mouseover', function (d) {
                     if (tooltipType && Array.isArray(d) || Links.length) tooltipShow(d);
-                  }).on("mouseleave", function () {
+                  }).on('mouseleave', function () {
                     if (!isInTooltip) {
                       tooltipHide(false);
                     }
                   });
 
                   if (lowSideMargin > 0) {
-                    var ggLowSide = svg.append("g").attr("transform", "translate(" + (left + lowSideMargin) + ", 0)").classed("michaeldmoore-multistat-panel-valueaxis", true).call(d3.axisLeft(valueScale).tickSizeInner(5).tickSizeOuter(10).ticks(5));
-                    ggLowSide.selectAll(".tick text").attr("fill", panel.LowAxisColor);
-                    ggLowSide.selectAll(".tick line").attr("stroke", panel.LowAxisColor).attr("stroke-width", panel.LowAxisWidth);
-                    ggLowSide.selectAll("path.domain").attr("stroke", panel.LowAxisColor).attr("stroke-width", panel.LowAxisWidth);
+                    var ggLowSide = svg.append('g').attr('transform', 'translate(' + (left + lowSideMargin) + ', 0)').classed('michaeldmoore-multistat-panel-valueaxis', true).call(d3.axisLeft(valueScale).tickSizeInner(5).tickSizeOuter(10).ticks(5));
+                    ggLowSide.selectAll('.tick text').attr('fill', panel.LowAxisColor);
+                    ggLowSide.selectAll('.tick line').attr('stroke', panel.LowAxisColor).attr('stroke-width', panel.LowAxisWidth);
+                    ggLowSide.selectAll('path.domain').attr('stroke', panel.LowAxisColor).attr('stroke-width', panel.LowAxisWidth);
                   }
 
                   if (highSideMargin > 0) {
-                    var ggHighSide = svg.append("g").attr("transform", "translate(" + (left + w - highSideMargin) + ", 0)").classed("michaeldmoore-multistat-panel-valueaxis", true).call(d3.axisRight(valueScale).tickSizeInner(5).tickSizeOuter(10).ticks(5));
-                    ggHighSide.selectAll(".tick text").attr("fill", panel.HighAxisColor);
-                    ggHighSide.selectAll(".tick line").attr("stroke", panel.HighAxisColor).attr("stroke-width", panel.HighAxisWidth);
-                    ggHighSide.selectAll("path.domain").attr("stroke", panel.HighAxisColor).attr("stroke-width", panel.HighAxisWidth);
+                    var ggHighSide = svg.append('g').attr('transform', 'translate(' + (left + w - highSideMargin) + ', 0)').classed('michaeldmoore-multistat-panel-valueaxis', true).call(d3.axisRight(valueScale).tickSizeInner(5).tickSizeOuter(10).ticks(5));
+                    ggHighSide.selectAll('.tick text').attr('fill', panel.HighAxisColor);
+                    ggHighSide.selectAll('.tick line').attr('stroke', panel.HighAxisColor).attr('stroke-width', panel.HighAxisWidth);
+                    ggHighSide.selectAll('path.domain').attr('stroke', panel.HighAxisColor).attr('stroke-width', panel.HighAxisWidth);
                   }
                 };
 
-                var _groupNameOffset = this.panel.ShowGroupLabels ? Number(this.panel.GroupLabelFontSize.replace("%", "")) * 0.15 : 0;
+                var _groupNameOffset = this.panel.ShowGroupLabels ? Number(this.panel.GroupLabelFontSize.replace('%', '')) * 0.15 : 0;
 
                 if (this.groupedRows != null) {
                   var _gcols = GroupCols <= 0 || GroupCols > this.groupedRows.length ? this.groupedRows.length : GroupCols;
@@ -1433,25 +1440,25 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
                     _hh += _dh;
                   }
                 } else {
-                  plotGroupVertical(this.panel, this.svg, this.rows, this.rows.length, "", 0, 0, w, 0, h);
+                  plotGroupVertical(this.panel, this.svg, this.rows, this.rows.length, '', 0, 0, w, 0, h);
                 }
               }
 
               var pulseHigh = function pulseHigh(svg) {
-                var highFlashRects = svg.selectAll("rect.michaeldmoore-multistat-panel-bar.highflash");
+                var highFlashRects = svg.selectAll('rect.michaeldmoore-multistat-panel-bar.highflash');
 
                 if ($.isNumeric(HighLimitBarFlashTimeout) && highFlashRects._groups.length > 0 && highFlashRects._groups[0].length > 0) {
-                  highFlashRects.transition().on("start", function highRepeat() {
-                    d3.active(this).style("fill", HighLimitBarFlashColor).duration(HighLimitBarFlashTimeout).transition().style("fill", HighLimitBarColor).duration(HighLimitBarFlashTimeout).transition().on("start", highRepeat);
+                  highFlashRects.transition().on('start', function highRepeat() {
+                    d3.active(this).style('fill', HighLimitBarFlashColor).duration(HighLimitBarFlashTimeout).transition().style('fill', HighLimitBarColor).duration(HighLimitBarFlashTimeout).transition().on('start', highRepeat);
                   });
                 }
               };
 
               var pulseLow = function pulseLow(svg) {
-                var lowFlashRects = svg.selectAll("rect.michaeldmoore-multistat-panel-bar.lowflash");
+                var lowFlashRects = svg.selectAll('rect.michaeldmoore-multistat-panel-bar.lowflash');
                 if ($.isNumeric(LowLimitBarFlashTimeout) && lowFlashRects._groups.length > 0 && lowFlashRects._groups[0].length > 0) {
-                  lowFlashRects.transition().on("start", function lowRepeat() {
-                    d3.active(this).style("fill", LowLimitBarFlashColor).duration(LowLimitBarFlashTimeout).transition().style("fill", LowLimitBarColor).duration(LowLimitBarFlashTimeout).transition().on("start", lowRepeat);
+                  lowFlashRects.transition().on('start', function lowRepeat() {
+                    d3.active(this).style('fill', LowLimitBarFlashColor).duration(LowLimitBarFlashTimeout).transition().style('fill', LowLimitBarColor).duration(LowLimitBarFlashTimeout).transition().on('start', lowRepeat);
                   });
                 }
               };
@@ -1465,7 +1472,7 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
               .on("drag", function () {
                 d3.select(this).attr("cx", d3.event.x).attr("cy", d3.event.y);
               });
-              if (!this.panel.Legend) {
+             if (!this.panel.Legend) {
               this.svg
                 .append("rect")
                 .attr("x", 10)
@@ -1481,18 +1488,18 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
             this.ctrl.renderingCompleted();
           }
         }, {
-          key: "onConfigChanged",
+          key: 'onConfigChanged',
           value: function onConfigChanged() {
             this.refresh();
           }
         }, {
-          key: "link",
+          key: 'link',
           value: function link(scope, elem, attrs, ctrl) {
             this.ctrl = ctrl;
             this.elem = elem;
 
             // for backward compatability (grafana 6.6.0 and earlier)
-            var panelContentElem = elem.find(".panel-content");
+            var panelContentElem = elem.find('.panel-content');
             if (panelContentElem.length) this.elem = panelContentElem;
 
             CTRL = ctrl;
@@ -1502,9 +1509,9 @@ System.register(["app/plugins/sdk", "jquery", "jquery.flot", "lodash", "moment",
         return MultistatPanelCtrl;
       }(MetricsPanelCtrl));
 
-      MultistatPanelCtrl.templateUrl = "module.html";
+      MultistatPanelCtrl.templateUrl = 'module.html';
 
-      _export("PanelCtrl", MultistatPanelCtrl);
+      _export('PanelCtrl', MultistatPanelCtrl);
     }
   };
 });
